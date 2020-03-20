@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\garba\.Rider2019.3\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\garba\.Rider2019.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\garba\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
+    <e p="D:\Projects\SanityHackathon\src\SanityDotNet" t="IncludeRecursive">
+      <e p="appsettings.Development.json" t="Include" />
+      <e p="appsettings.json" t="Include" />
+      <e p="bin" t="ExcludeRecursive" />
+      <e p="Client" t="Include">
+        <e p="IQueryApi.cs" t="Include" />
+        <e p="ISanityClient.cs" t="Include" />
+        <e p="SanityClient.cs" t="Include" />
+      </e>
+      <e p="Controllers" t="Include">
+        <e p="StartPageController.cs" t="Include" />
+      </e>
+      <e p="Conventions" t="Include">
+        <e p="FieldPathVisitor.cs" t="Include" />
+      </e>
+      <e p="ExpressionFinder.cs" t="Include" />
+      <e p="ExpressionReplacer.cs" t="Include" />
+      <e p="ExpressionVisitor.cs" t="Include" />
+      <e p="Extensions" t="Include">
+        <e p="ExpressionExtensions.cs" t="Include" />
+        <e p="MethodInfoExtensions.cs" t="Include" />
+        <e p="SanityQueryBuilderExtensions.cs" t="Include" />
+        <e p="StringExtensions.cs" t="Include" />
+      </e>
+      <e p="FieldFilterValue.cs" t="Include" />
+      <e p="FilterExpression.cs" t="Include" />
+      <e p="FilterExpressionParser.cs" t="Include" />
+      <e p="Filters.cs" t="Include" />
+      <e p="IFilterContainer.cs" t="Include" />
+      <e p="launchSettings.json" t="Include" />
+      <e p="obj" t="ExcludeRecursive">
+        <e p="Debug" t="Include">
+          <e p="netcoreapp2.2" t="Include">
+            <e p="RefitStubs.g.cs" t="Include" />
+            <e p="SanityDotNet.AssemblyInfo.cs" t="Include" />
+            <e p="SanityDotNet.RazorAssemblyInfo.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Program.cs" t="Include" />
+      <e p="Properties" t="Include">
+        <e p="launchSettings.json" t="Include" />
+      </e>
+      <e p="QueryApi" t="Include">
+        <e p="Filters" t="Include">
+          <e p="AndFilter.cs" t="Include" />
+          <e p="BoolFilter.cs" t="Include" />
+          <e p="ComparisonOperator.cs" t="Include" />
+          <e p="FieldFilter.cs" t="Include" />
+          <e p="Filter.cs" t="Include" />
+          <e p="IComparisonFilter.cs" t="Include" />
+          <e p="InFilter.cs" t="Include" />
+          <e p="NotFilter.cs" t="Include" />
+          <e p="OrFilter.cs" t="Include" />
+        </e>
+        <e p="IQueryBuilder.cs" t="Include" />
+        <e p="IQueryContext.cs" t="Include" />
+        <e p="QueryBuilder.cs" t="Include" />
+        <e p="QueryParameters.cs" t="Include" />
+        <e p="QueryResponse.cs" t="Include" />
+      </e>
+      <e p="Reflection" t="Include">
+        <e p="ExpressionExtensions.cs" t="Include" />
+        <e p="MemberInfoExtensions.cs" t="Include" />
+      </e>
+      <e p="SanityDotNet.csproj" t="IncludeRecursive" />
+      <e p="Startup.cs" t="Include" />
+    </e>
+    <e p="D:\Projects\SanityHackathon\src\SanityHackathon.Front" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

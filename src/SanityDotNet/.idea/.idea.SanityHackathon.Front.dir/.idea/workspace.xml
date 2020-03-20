@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="c276906a-1509-4af1-a1d5-52401153ce6c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/ExpressionFinder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Extensions/MethodInfoExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Controllers/StartPageController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA55E692-DA2C-4C8A-912D-364A352AAD35/288/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/FilterExpressionParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Extensions/StringExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Extensions/ExpressionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/FilterExpression.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/ExpressionVisitor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Reflection/MemberInfoExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/7A9A7E4E-070B-4688-A5EF-EA1109973487/3B/ExpressionVisitor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/InFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/FieldFilterValue.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/IFilterContainer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/OrFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/AndFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/BoolFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/IComparisonFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Conventions/FieldPathVisitor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/NotFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/IQueryBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA55E692-DA2C-4C8A-912D-364A352AAD35/BD/Single.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/QueryResponse.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA55E692-DA2C-4C8A-912D-364A352AAD35/2B/String.Comparison.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/ComparisonOperator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Client/ISanityClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Client/SanityClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/Filter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/QueryBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/QueryParameters.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/CA55E692-DA2C-4C8A-912D-364A352AAD35/37/821bec87/IFormattable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/Filters/FieldFilter.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA55E692-DA2C-4C8A-912D-364A352AAD35/81/Double.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA55E692-DA2C-4C8A-912D-364A352AAD35/3F/Decimal.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Filters.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/QueryApi/IQueryContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Client/IQueryApi.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/99/DateTimeConverterBase.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/9D/IsoDateTimeConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CA55E692-DA2C-4C8A-912D-364A352AAD35/26/Object.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Extensions/SanityQueryBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/20735148-1523-4917-A5E8-F91B0B239405/6/JsonConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/Reflection/ExpressionExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../SanityDotNet/ExpressionReplacer.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Client/QueryApiClient.cs" />
+        <option value="$PROJECT_DIR$/Client/IQueryApiClient.cs" />
+        <option value="$PROJECT_DIR$/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Extensions/ISanityQueryBuilderExtensions.cs" />
+        <option value="$PROJECT_DIR$/Client/IQueryApi.cs" />
+        <option value="$PROJECT_DIR$/Extensions/StringExtensions.cs" />
+        <option value="$PROJECT_DIR$/SanityFilterExpressio.cs" />
+        <option value="$PROJECT_DIR$/Extensions/MethodInfoExtensions.cs" />
+        <option value="$PROJECT_DIR$/Extensions/ExpressionExtensions.cs" />
+        <option value="$PROJECT_DIR$/Reflection/ExpressionExtensions.cs" />
+        <option value="$PROJECT_DIR$/FilterExpressionParser.cs" />
+        <option value="$PROJECT_DIR$/ISanityFilter.cs" />
+        <option value="$PROJECT_DIR$/Startup.cs" />
+        <option value="$PROJECT_DIR$/SanityFilterExpression.cs" />
+        <option value="$PROJECT_DIR$/ExpressionReplacer.cs" />
+        <option value="$PROJECT_DIR$/ExpressionFinder.cs" />
+        <option value="$PROJECT_DIR$/Reflection/MemberInfoExtensions.cs" />
+        <option value="$PROJECT_DIR$/ExpressionVisitor.cs" />
+        <option value="$PROJECT_DIR$/Conventions/FieldPathVisitor.cs" />
+        <option value="$PROJECT_DIR$/ISanityQueryContext.cs" />
+        <option value="$PROJECT_DIR$/Client/SanityClient.cs" />
+        <option value="$PROJECT_DIR$/Client/ISanityClient.cs" />
+        <option value="$PROJECT_DIR$/SanityQueryResponse.cs" />
+        <option value="$PROJECT_DIR$/SanityQueryBuilder.cs" />
+        <option value="$PROJECT_DIR$/Extensions/SanityQueryBuilderExtensions.cs" />
+        <option value="$PROJECT_DIR$/SanityFieldFilter.cs" />
+        <option value="$PROJECT_DIR$/SanityComparisonOperator.cs" />
+        <option value="$PROJECT_DIR$/SanityFilter.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/SanityFilter.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/SanityComparisonOperator.cs" />
+        <option value="$PROJECT_DIR$/ISanityQueryBuilder.cs" />
+        <option value="$PROJECT_DIR$/FieldFilterValue.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/SanityFieldFilter.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/SanityInFilter.cs" />
+        <option value="$PROJECT_DIR$/Controllers/StartPageController.cs" />
+        <option value="$PROJECT_DIR$/Filters.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/IComparisonFilter.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/AndFilter.cs" />
+        <option value="$PROJECT_DIR$/Api/Filters/Filter.cs" />
+        <option value="$PROJECT_DIR$/QueryResponse.cs" />
+        <option value="$PROJECT_DIR$/IFilterContainer.cs" />
+        <option value="$PROJECT_DIR$/IFilter.cs" />
+        <option value="$PROJECT_DIR$/IQueryBuilder.cs" />
+        <option value="$PROJECT_DIR$/IQueryContext.cs" />
+        <option value="$PROJECT_DIR$/../SanityDotNet/ExpressionFinder.cs" />
+        <option value="$PROJECT_DIR$/../SanityDotNet/Controllers/StartPageController.cs" />
+        <option value="$PROJECT_DIR$/../SanityDotNet/QueryParameters.cs" />
+        <option value="$PROJECT_DIR$/../SanityDotNet/QueryApi/QueryParameters.cs" />
+        <option value="$PROJECT_DIR$/../SanityDotNet/launchSettings.json" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YwZxbNCrzGltRQtsWgjKQ9J1zZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/Projects/MaxFritid" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.SanityHackathon.Front: IIS Express">
+    <configuration name="SanityHackathon.Front" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SanityHackathon.Front.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="SanityHackathon.Front" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanityHackathon.Front: IIS Express (1)" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SanityHackathon.Front.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="SanityHackathon.Front" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SanityHackathon.Front: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
+      <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/SanityHackathon.Front.csproj" />
+      <option name="LAUNCH_PROFILE_TFM" value=".NETCoreApp,Version=v2.2" />
+      <option name="LAUNCH_PROFILE_NAME" value="IIS Express" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="GENERATE_APPLICATIONHOST_CONFIG" value="1" />
+      <option name="SHOW_IIS_EXPRESS_OUTPUT" value="0" />
+      <option name="SEND_DEBUG_REQUEST" value="1" />
+      <option name="ADDITIONAL_IIS_EXPRESS_ARGUMENTS" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue=".NET Launch Settings Profile.SanityHackathon.Front" />
+      <item itemvalue=".NET Launch Settings Profile.SanityHackathon.Front: IIS Express" />
+      <item itemvalue=".NET Launch Settings Profile.SanityHackathon.Front: IIS Express (1)" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c276906a-1509-4af1-a1d5-52401153ce6c" name="Default Changelist" comment="" />
+      <created>1583855864431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583855864431</updated>
+      <workItem from="1583855865626" duration="2358000" />
+      <workItem from="1584539457386" duration="8366000" />
+      <workItem from="1584602522553" duration="16014000" />
+      <workItem from="1584688921905" duration="23540000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="WindowStateProjectService">
+    <state x="552" y="178" key="#Chrome_Settings" timestamp="1584603936779">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="178" key="#Chrome_Settings/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584603936779" />
+    <state x="540" y="169" key="#Web_Browsers" timestamp="1584604032711">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="540" y="169" key="#Web_Browsers/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584604032711" />
+    <state x="215" y="85" width="1466" height="851" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584726587201">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="215" y="85" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1584726587201" />
+    <state x="215" y="85" width="1466" height="851" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584604151430" />
+    <state width="1201" height="709" key="DebuggerActiveHint" timestamp="1584714715312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1201" height="709" key="DebuggerActiveHint/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584714715312" />
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom" timestamp="1584726907772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907772" />
+    <state width="1877" height="146" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720250" />
+    <state width="1877" height="146" key="GridCell.Tab.0.center" timestamp="1584726907772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907772" />
+    <state width="1877" height="146" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720250" />
+    <state width="1877" height="146" key="GridCell.Tab.0.left" timestamp="1584726907772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907772" />
+    <state width="1877" height="146" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720250" />
+    <state width="1877" height="146" key="GridCell.Tab.0.right" timestamp="1584726907772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907772" />
+    <state width="1877" height="146" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720250" />
+    <state width="1877" height="146" key="GridCell.Tab.1.bottom" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717722793" />
+    <state width="1877" height="146" key="GridCell.Tab.1.center" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717722793" />
+    <state width="1877" height="146" key="GridCell.Tab.1.left" timestamp="1584726907772">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907772" />
+    <state width="1877" height="146" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717722793" />
+    <state width="1877" height="146" key="GridCell.Tab.1.right" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717722793" />
+    <state width="1877" height="146" key="GridCell.Tab.2.bottom" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.2.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.2.center" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.2.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720176" />
+    <state width="1877" height="146" key="GridCell.Tab.2.left" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.2.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720176" />
+    <state width="1877" height="146" key="GridCell.Tab.2.right" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.2.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.3.bottom" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.3.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.3.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.3.center" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.3.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.3.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.3.left" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.3.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.3.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.3.right" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.3.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.3.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.4.bottom" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.4.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.4.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.4.center" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.4.center/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.4.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.4.left" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.4.left/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.4.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state width="1877" height="146" key="GridCell.Tab.4.right" timestamp="1584726907773">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1877" height="146" key="GridCell.Tab.4.right/0.0.1920.1040@0.0.1920.1040" timestamp="1584726907773" />
+    <state width="1877" height="146" key="GridCell.Tab.4.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584717720177" />
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size" timestamp="1584726779390">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Rider.ProjectTemplateDialog.Size/0.0.1920.1040@0.0.1920.1040" timestamp="1584726779390" />
+    <state x="632" y="235" key="RiderGenerateDialog" timestamp="1584616922686">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="632" y="235" key="RiderGenerateDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584616922686" />
+    <state x="226" y="34" width="1329" height="963" key="SettingsEditor" timestamp="1584710751900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="226" y="34" width="1329" height="963" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584710751900" />
+    <state width="968" height="528" key="XDebugger.FullValuePopup" timestamp="1584714715310">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="528" key="XDebugger.FullValuePopup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584714715310" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1584612659375">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1584612659375" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../SanityDotNet/Controllers/StartPageController.cs</url>
+          <line>28</line>
+          <properties documentPath="$PROJECT_DIR$/Controllers/StartPageController.cs" initialLine="24">
+            <startOffsets>
+              <option value="874" />
+            </startOffsets>
+            <endOffsets>
+              <option value="905" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/../SanityDotNet/Extensions/SanityQueryBuilderExtensions.cs</url>
+          <line>69</line>
+          <properties documentPath="$PROJECT_DIR$/Extensions/SanityQueryBuilderExtensions.cs" initialLine="51">
+            <startOffsets>
+              <option value="2441" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2459" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo typeName="System.Linq.Expressions.PropertyExpression" fieldName="Type (PropertyExpression)" />
+        <PinnedItemInfo typeName="System.Linq.Expressions.PropertyExpression" fieldName="NodeType (Expression)" />
+      </pinned-members>
+    </pin-to-top-manager>
+  </component>
+</project>
