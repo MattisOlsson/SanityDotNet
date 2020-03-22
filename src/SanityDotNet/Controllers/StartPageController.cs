@@ -23,11 +23,16 @@ namespace SanityDotNet.Controllers
                 .Filter(m => m.Variant.Id.Is(1))
                 .Filter(m => m.Title.In(new [] { "foo", "bar"}))
                 .Filter(m => m.IsPublished.Is(true))
-                .Filter(m => m.Variant.IsPrimary.Is(false))
+                .Filter(m => !m.Variant.IsPrimary.Is(true))
+                .Filter(m => m.Title.IsDefined())
+                .Filter(m => m.Title.Match("Hallå*"))
                 .OrFilter(m => m.IsNew.Is(true))
-                .GetQueryResult();
+                .OrderBy(m => m.Title.Ascending())
+                .OrderBy(m => m.Variant.Id.Descending())
+                .OrderBy(m => m.Title.Descending())
+                .GetQueryString();
 
-            return Content("Hello world!");
+            return Content(search);
         }
     }
 }

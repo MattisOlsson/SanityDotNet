@@ -1,8 +1,10 @@
 using System;
 using System.Text;
 using SanityDotNet.Controllers;
+using SanityDotNet.Extensions;
 using SanityDotNet.Models;
 using SanityDotNet.QueryApi.Filters;
+using SanityDotNet.QueryApi.Sorting;
 
 namespace SanityDotNet.QueryApi
 {
@@ -18,6 +20,7 @@ namespace SanityDotNet.QueryApi
 
         public QueryBuilder()
         {
+            Order = new SortList();
         }
 
         public QueryBuilder(IQueryBuilder<T> queryBuilder, Action<IQueryContext> action) : this()
@@ -27,6 +30,7 @@ namespace SanityDotNet.QueryApi
         }
 
         public Filter Filter { get; set; }
+        public SortList Order { get; set; }
 
         public void ApplyActions(IQueryContext context)
         {
@@ -36,7 +40,11 @@ namespace SanityDotNet.QueryApi
 
         public string ToQueryString()
         {
-            return $"*[{ToString()}]";
+            var sorting = GetSortingString();
+
+            return !string.IsNullOrEmpty(sorting)
+                ? $"*[{ToString()}] | {sorting}"
+                : $"*[{ToString()}]";
         }
 
         public override string ToString()
@@ -50,6 +58,13 @@ namespace SanityDotNet.QueryApi
 
             sb.Append(Filter?.ToString() ?? string.Empty);
 
+            return sb.ToString();
+        }
+
+        public virtual string GetSortingString()
+        {
+            var sb = new StringBuilder();
+            sb.Append(Order?.ToString() ?? string.Empty);
             return sb.ToString();
         }
     }

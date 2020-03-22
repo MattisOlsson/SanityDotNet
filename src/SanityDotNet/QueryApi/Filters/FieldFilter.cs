@@ -6,7 +6,7 @@ namespace SanityDotNet.QueryApi.Filters
         {
             Field = field;
             Value = value;
-            ComparisonOperator = Filters.ComparisonOperator.Equals;
+            ComparisonOperator = ComparisonOperator.Equals;
         }
 
         public string Field { get; }

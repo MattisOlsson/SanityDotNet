@@ -5,21 +5,21 @@ using SanityDotNet.QueryApi.Filters;
 
 namespace SanityDotNet
 {
-    public class FilterExpression<T> : Filter
+    public class FilterExpression<T, TFilter> : Filter where TFilter : Filter
     {
-        internal static Filter ParseFilterExpression<TSource>(
+        internal static TFilter ParseFilterExpression<TSource>(
             IQueryBuilder<TSource> search,
-            Expression<Func<TSource, Filter>> filterExpression)
+            Expression<Func<TSource, TFilter>> filterExpression)
         {
-            return new FilterExpressionParser().GetFilter(filterExpression);
+            return new FilterExpressionParser<TFilter>().GetFilter(filterExpression);
         }
 
-        public FilterExpression(Expression<Func<T, Filter>> expression)
+        public FilterExpression(Expression<Func<T, TFilter>> expression)
         {
             Expression = expression;
         }
 
-        public Expression<Func<T, Filter>> Expression { get; set; }
+        public Expression<Func<T, TFilter>> Expression { get; set; }
     }
 
 }

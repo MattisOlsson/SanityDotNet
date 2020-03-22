@@ -8,12 +8,12 @@ using SanityDotNet.Reflection;
 
 namespace SanityDotNet
 {
-    public class FilterExpressionParser
+    public class FilterExpressionParser<TFilter> where TFilter : Filter
     {
-        public virtual Filter GetFilter<TSource>(
-            Expression<Func<TSource, Filter>> filterExpression)
+        public virtual TFilter GetFilter<TSource>(
+            Expression<Func<TSource, TFilter>> filterExpression)
         {
-            ValidateFilterExpression(filterExpression);
+            Validate(filterExpression);
             var expression = filterExpression.Body;
 
             while (expression.Find(new Func<MethodCallExpression, bool>(ReturnsFilterExpression)).Any())
@@ -24,53 +24,54 @@ namespace SanityDotNet
             }
 
             return expression.Replace(
-                    x => x.Method.ReturnType == typeof(DelegateFilterBuilder),
+                    x => typeof(IDelegateFilter<TFilter>).IsAssignableFrom(x.Method.ReturnType),
                     (Func<MethodCallExpression, Expression>) (x =>
-                        (Expression) Expression.Constant(GetFilterFromDelegateFilterBuilderMethod(x, null))))
-                .CompileInvoke<Filter>();
+                        (Expression) Expression.Constant(GetFilterFromDelegateFilterMethod(x, null))))
+                .CompileInvoke<TFilter>();
         }
 
-        protected virtual void ValidateFilterExpression<TSource>(
-            Expression<Func<TSource, Filter>> filterExpression)
+        protected virtual void Validate<TSource>(
+            Expression<Func<TSource, TFilter>> filterExpression)
         {
+            var delegateType = typeof(IDelegateFilter<TFilter>);
             if (filterExpression.Body
-                .Find<NewExpression>(x => x.Type == typeof(DelegateFilterBuilder)).Any())
+                .Find<NewExpression>(x => delegateType.IsAssignableFrom(x.Type)).Any())
             {
                 throw new NotSupportedException(
-                    $"Instantiating new {typeof(DelegateFilterBuilder).Name} is not supported.The {typeof(DelegateFilterBuilder).Name} class is intended to be used as a return value from extensions methods.");
+                    $"Instantiating new {delegateType.Name} is not supported.The {delegateType.Name} class is intended to be used as a return value from extensions methods.");
             }
 
             var source1 = filterExpression.Body.Find(
                 (Func<MethodCallExpression, bool>) (x =>
-                    !x.Method.IsExtensionMethod() && x.Method.ReturnType == typeof(DelegateFilterBuilder))).ToList();
+                    !x.Method.IsExtensionMethod() && delegateType.IsAssignableFrom(x.Method.ReturnType))).ToList();
             if (source1.Any())
             {
                 throw new NotSupportedException(
-                    $"Method {source1.First().Method.Name} returns {typeof(DelegateFilterBuilder).Name}. Only extension methods should return {typeof(DelegateFilterBuilder).Name}.");
+                    $"Method {source1.First().Method.Name} returns {delegateType.Name}. Only extension methods should return {delegateType.Name}.");
             }
 
             if (filterExpression.Body.Find((Func<NewExpression, bool>) (x =>
-                x.Type.IsGenericType && x.Type.GetGenericTypeDefinition() == typeof(FilterExpression<>))).Any())
+                x.Type.IsGenericType && x.Type.GetGenericTypeDefinition() == typeof(FilterExpression<,>))).Any())
             {
                 throw new NotSupportedException(
-                    $"Instantiating new {typeof(FilterExpression<>).Name} is not supported.The {typeof(FilterExpression<>).Name} class is intended to be used as a return value from extensions methods.");
+                    $"Instantiating new {typeof(FilterExpression<,>).Name} is not supported.The {typeof(FilterExpression<,>).Name} class is intended to be used as a return value from extensions methods.");
             }
 
             var source2 = filterExpression.Body.Find(
                 (Func<MethodCallExpression, bool>) (x =>
                     !x.Method.IsExtensionMethod() && x.Type.IsGenericType &&
-                    x.Type.GetGenericTypeDefinition() == typeof(FilterExpression<>))).ToList();
+                    x.Type.GetGenericTypeDefinition() == typeof(FilterExpression<,>))).ToList();
 
             if (source2.Any())
             {
                 throw new NotSupportedException(
-                    $"Method {source2.First().Method.Name} returns {typeof(FilterExpression<>).Name}. Only extension methods should return {typeof(FilterExpression<>).Name}.");
+                    $"Method {source2.First().Method.Name} returns {typeof(FilterExpression<,>).Name}. Only extension methods should return {typeof(FilterExpression<,>).Name}.");
             }
         }
 
         protected bool ReturnsFilterExpression(MethodCallExpression x)
         {
-            return x.Method.HasGenericTypeDefinition(typeof(FilterExpression<>));
+            return x.Method.HasGenericTypeDefinition(typeof(FilterExpression<,>));
         }
 
         protected Expression RealizeFilterExpressionMethodCalls(
@@ -82,18 +83,18 @@ namespace SanityDotNet
         protected Expression GetExpressionFromFilterExpressionMethod(
             MethodCallExpression methodExpression)
         {
-            var objectList = new List<object>
+            var methodArguments = new List<object>
             {
                 null
             };
 
             for (var index = 1; index < methodExpression.Arguments.Count; ++index)
             {
-                objectList.Add(methodExpression.Arguments[index].CompileInvoke());
+                methodArguments.Add(methodExpression.Arguments[index].CompileInvoke());
             }
 
-            var obj1 = methodExpression.Method.Invoke(null, objectList.ToArray());
-            var obj2 = typeof(FilterExpression<>)
+            var obj1 = methodExpression.Method.Invoke(null, methodArguments.ToArray());
+            var obj2 = typeof(FilterExpression<,>)
                 .MakeGenericType(methodExpression.Method.ReturnType.GetGenericArguments()[0]).GetProperty("Expression")
                 ?.GetGetMethod()
                 .Invoke(obj1, new object[0]);
@@ -110,7 +111,7 @@ namespace SanityDotNet
                 (Func<Expression, Expression>) ReplaceWith);
         }
 
-        protected Filter GetFilterFromDelegateFilterBuilderMethod(
+        protected TFilter GetFilterFromDelegateFilterMethod(
             MethodCallExpression methodExpression,
             string fieldName)
         {
@@ -119,18 +120,18 @@ namespace SanityDotNet
                 fieldName = string.Empty;
             }
 
-            var objectList = new List<object>
+            var methodArguments = new List<object>
             {
                 null
             };
 
             for (var index = 1; index < methodExpression.Arguments.Count; ++index)
             {
-                objectList.Add(methodExpression.Arguments[index].CompileInvoke());
+                methodArguments.Add(methodExpression.Arguments[index].CompileInvoke());
             }
 
             var delegateFilterBuilder =
-                (DelegateFilterBuilder) methodExpression.Method.Invoke(null, objectList.ToArray());
+                (IDelegateFilter<TFilter>) methodExpression.Method.Invoke(null, methodArguments.ToArray());
 
             if (!IsFieldNameExpression(methodExpression.Arguments[0]))
             {
