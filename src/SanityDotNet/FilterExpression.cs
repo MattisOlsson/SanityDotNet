@@ -8,7 +8,6 @@ namespace SanityDotNet
     public class FilterExpression<T, TFilter> : Filter where TFilter : Filter
     {
         internal static TFilter ParseFilterExpression<TSource>(
-            IQueryBuilder<TSource> search,
             Expression<Func<TSource, TFilter>> filterExpression)
         {
             return new FilterExpressionParser<TFilter>().GetFilter(filterExpression);

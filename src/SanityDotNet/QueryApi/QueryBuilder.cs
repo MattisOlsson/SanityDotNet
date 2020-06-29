@@ -1,36 +1,48 @@
 using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
-using SanityDotNet.Controllers;
-using SanityDotNet.Extensions;
+using System.Web;
+using SanityDotNet.Client;
+using SanityDotNet.Conventions;
 using SanityDotNet.Models;
 using SanityDotNet.QueryApi.Filters;
+using SanityDotNet.QueryApi.Projections;
 using SanityDotNet.QueryApi.Sorting;
 
 namespace SanityDotNet.QueryApi
 {
-    public class QueryBuilder<T> : IQueryBuilder<T> where T : SanityDocument
+    public class QueryBuilder<T> : IQueryBuilder<T>
     {
         private readonly Action<IQueryContext> _action;
-        private readonly IQueryBuilder<T> _wrapped;
-
-        public static IQueryBuilder<T> Create()
-        {
-            return new QueryBuilder<T>();
-        }
+        private readonly IQueryBuilder _wrapped;
 
         public QueryBuilder()
         {
             Order = new SortList();
+            Projections = new List<Projection>();
         }
 
-        public QueryBuilder(IQueryBuilder<T> queryBuilder, Action<IQueryContext> action) : this()
+        public QueryBuilder(IQueryBuilder queryBuilder, Action<IQueryContext> action) : this()
         {
+            Client = queryBuilder.Client;
+            Language = queryBuilder.Language;
+            Projections = queryBuilder.Projections;
             _wrapped = queryBuilder;
             _action = action;
         }
 
+        public List<Projection> Projections { get; set; }
+
+        public ISanityClient Client { get; internal set; }
+
         public Filter Filter { get; set; }
+
         public SortList Order { get; set; }
+
+        public CultureInfo Language { get; set; }
 
         public void ApplyActions(IQueryContext context)
         {
@@ -43,8 +55,13 @@ namespace SanityDotNet.QueryApi
             var sorting = GetSortingString();
 
             return !string.IsNullOrEmpty(sorting)
-                ? $"*[{ToString()}] | {sorting}"
-                : $"*[{ToString()}]";
+                ? $"*[{ToString()}]|{sorting}{GetProjections()}"
+                : $"*[{ToString()}]{GetProjections()}";
+        }
+
+        public string ToEncodedQueryString()
+        {
+            return HttpUtility.UrlEncode(ToQueryString());
         }
 
         public override string ToString()
@@ -66,6 +83,16 @@ namespace SanityDotNet.QueryApi
             var sb = new StringBuilder();
             sb.Append(Order?.ToString() ?? string.Empty);
             return sb.ToString();
+        }
+
+        public virtual string GetProjections()
+        {
+            if (Projections.Count == 0)
+            {
+                return string.Empty;
+            }
+
+            return $"{{{string.Join(",", Projections.Select(p => p.ToString()))}}}";
         }
     }
 }

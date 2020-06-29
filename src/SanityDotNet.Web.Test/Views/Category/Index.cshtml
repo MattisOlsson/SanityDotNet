@@ -1,0 +1,26 @@
+@using SanityDotNet.Mvc
+@model SanityDotNet.Web.Test.Models.ViewModels.CategoryViewModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>title</title>
+</head>
+<body>
+<div>
+    <h1>@(Model.Category.DisplayName ?? Model.Category.Title)</h1>
+
+    <ol>
+        @foreach (var product in Model.Products)
+        {
+            <li><a href="@await Url.DocumentUrl(product)">@product.Title</a></li>
+        }
+    </ol>
+</div>
+</body>
+</html>

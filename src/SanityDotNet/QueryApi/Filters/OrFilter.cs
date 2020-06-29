@@ -14,7 +14,7 @@ namespace SanityDotNet.QueryApi.Filters
 
         public override string ToString()
         {
-            return $"{string.Join(" || ", Filters.Select(x => x.ToString()))}";
+            return $"{string.Join("||", Filters.Select(x => x.ToString()))}";
         }
     }
 }

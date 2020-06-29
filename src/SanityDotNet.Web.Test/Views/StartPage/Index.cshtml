@@ -1,0 +1,31 @@
+@model IEnumerable<SanityDotNet.Web.Test.Models.ViewModels.ProductViewModel>
+
+@{
+  Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>title</title>
+</head>
+<body>
+  <div>
+    <ol>
+      @foreach (var doc in Model)
+      {
+        <li>
+          <h2>@doc.Product.Title</h2>
+          <p>@doc.Product.Id</p>
+          <p>@doc.Product.Blurb</p>
+          <time>@doc.Product.UpdatedAt</time>
+          <p>
+            <a href="@doc.Url">@doc.Url</a>
+          </p>
+        </li>
+      }
+    </ol>
+  </div>
+</body>
+</html>

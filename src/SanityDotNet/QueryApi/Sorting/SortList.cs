@@ -19,7 +19,9 @@ namespace SanityDotNet.QueryApi.Sorting
 
         public override string ToString()
         {
-            return $"order({string.Join(", ", _sortings.Select(x => x.ToString()))})";
+            return _sortings.Count > 0
+                ? $"order({string.Join(",", _sortings.Select(x => x.ToString()))})"
+                : string.Empty;
         }
     }
 }

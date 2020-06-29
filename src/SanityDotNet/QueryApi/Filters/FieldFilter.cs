@@ -22,7 +22,7 @@ namespace SanityDotNet.QueryApi.Filters
                     : $"!{Field}";
             }
 
-            return $"{Field} {GetComparisonOperator()} {Value.ToQueryFormat()}";
+            return $"{Field}{GetComparisonOperator()}{Value.ToQueryFormat()}";
         }
 
         protected virtual string GetComparisonOperator()

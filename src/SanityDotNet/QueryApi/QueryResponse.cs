@@ -1,11 +1,13 @@
 using System.Collections.Generic;
+using Newtonsoft.Json;
 using Refit;
 
 namespace SanityDotNet.QueryApi
 {
     public class QueryResponse<T>
     {
-        [AliasAs("ms")] public long Duration { get; set; }
+        [JsonProperty("ms")]
+        public long Duration { get; set; }
 
         public string Query { get; set; }
 

@@ -39,8 +39,8 @@ namespace SanityDotNet.Conventions
         {
             if (!_inGenericDictionaryKeyExpression)
             {
-                var aliasAsAttribute = node.Member.GetCustomAttribute<AliasAsAttribute>();
-                PrependMemberName(aliasAsAttribute?.Name ?? node.Member.Name);
+                var aliasAsAttribute = node.Member.GetCustomAttribute<JsonPropertyAttribute>();
+                PrependMemberName(aliasAsAttribute?.PropertyName ?? node.Member.Name);
             }
 
             var expression1 = Visit(node.Expression);
@@ -92,8 +92,8 @@ namespace SanityDotNet.Conventions
             }
             else if (!_inGenericDictionaryKeyExpression)
             {
-                var aliasAsAttribute = node.Method.GetCustomAttribute<AliasAsAttribute>();
-                PrependMemberName(aliasAsAttribute?.Name ?? node.Method.Name);
+                var aliasAsAttribute = node.Method.GetCustomAttribute<JsonPropertyAttribute>();
+                PrependMemberName(aliasAsAttribute?.PropertyName ?? node.Method.Name);
             }
 
             var methodCallExpression = node;

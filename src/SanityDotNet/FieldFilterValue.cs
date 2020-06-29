@@ -160,7 +160,7 @@ namespace SanityDotNet
                 || type == typeof(DateTime?)
                 || type == typeof(Enum))
             {
-                return $@"'{ToString()}'";
+                return $"\"{ToString()}\"";
             }
 
             if (type == typeof(float)

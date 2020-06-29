@@ -7,11 +7,13 @@ namespace SanityDotNet.QueryApi.Filters
     {
         public string Field { get; }
         public IEnumerable<FieldFilterValue> ValuesToMatch { get; }
+        public string FieldSuffix { get; set; }
 
         public InFilter(string field, IEnumerable<FieldFilterValue> valuesToMatch)
         {
             Field = field;
             ValuesToMatch = valuesToMatch;
+            FieldSuffix = string.Empty;
         }
 
         public override string ToString()
