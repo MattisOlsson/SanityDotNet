@@ -22,7 +22,8 @@ namespace SanityDotNet.Web
                 return _inner.BindModelAsync(bindingContext);
             }
 
-            if (bindingContext.ActionContext.RouteData.Values.TryGetValue(value.FirstValue, out object model) && model is ISanityDocument)
+            if (bindingContext.ActionContext.RouteData.Values.TryGetValue(value.FirstValue, out object model) &&
+                model is ISanityDocument)
             {
                 bindingContext.Result = ModelBindingResult.Success(model);
                 return Task.CompletedTask;

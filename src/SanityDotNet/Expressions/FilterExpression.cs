@@ -1,9 +1,8 @@
 using System;
 using System.Linq.Expressions;
-using SanityDotNet.QueryApi;
 using SanityDotNet.QueryApi.Filters;
 
-namespace SanityDotNet
+namespace SanityDotNet.Expressions
 {
     public class FilterExpression<T, TFilter> : Filter where TFilter : Filter
     {
@@ -20,5 +19,4 @@ namespace SanityDotNet
 
         public Expression<Func<T, TFilter>> Expression { get; set; }
     }
-
 }

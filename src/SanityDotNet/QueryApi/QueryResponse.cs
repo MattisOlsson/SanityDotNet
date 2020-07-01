@@ -6,8 +6,7 @@ namespace SanityDotNet.QueryApi
 {
     public class QueryResponse<T>
     {
-        [JsonProperty("ms")]
-        public long Duration { get; set; }
+        [JsonProperty("ms")] public long Duration { get; set; }
 
         public string Query { get; set; }
 

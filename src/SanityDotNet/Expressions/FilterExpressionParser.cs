@@ -6,7 +6,7 @@ using SanityDotNet.Extensions;
 using SanityDotNet.QueryApi.Filters;
 using SanityDotNet.Reflection;
 
-namespace SanityDotNet
+namespace SanityDotNet.Expressions
 {
     public class FilterExpressionParser<TFilter> where TFilter : Filter
     {

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
+using SanityDotNet.Expressions;
 using SanityDotNet.Models;
 using SanityDotNet.QueryApi.Filters;
 using SanityDotNet.QueryApi.Projections;

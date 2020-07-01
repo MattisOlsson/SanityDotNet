@@ -1,3 +1,5 @@
+using SanityDotNet.Expressions;
+
 namespace SanityDotNet.QueryApi.Filters
 {
     public class MatchContainedFilter : Filter

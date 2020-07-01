@@ -11,7 +11,10 @@ namespace SanityDotNet.Mvc.Routing
         public ContentControllerDescriptor ResolvedTemplate { get; set; }
         public IEnumerable<ContentControllerDescriptor> AvailableTemplates { get; }
 
-        public TemplateResolvingNotification(ISanityDocument content, ContentControllerDescriptor resolvedTemplate, IEnumerable<ContentControllerDescriptor> availableTemplates)
+        public TemplateResolvingNotification(
+            ISanityDocument content,
+            ContentControllerDescriptor resolvedTemplate,
+            IEnumerable<ContentControllerDescriptor> availableTemplates)
         {
             Content = content;
             ResolvedTemplate = resolvedTemplate;

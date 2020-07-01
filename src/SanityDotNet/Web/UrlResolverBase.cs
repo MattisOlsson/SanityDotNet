@@ -23,7 +23,8 @@ namespace SanityDotNet.Web
             return await GetDocument<ISanityDocument>(new Reference {Id = documentId}, language);
         }
 
-        public virtual async Task<TDoc> GetDocument<TDoc>(Reference documentReference, CultureInfo language) where TDoc : ISanityDocument
+        public virtual async Task<TDoc> GetDocument<TDoc>(Reference documentReference, CultureInfo language)
+            where TDoc : ISanityDocument
         {
             if (documentReference == null)
             {

@@ -48,4 +48,5 @@ namespace SanityDotNet.Mvc.Globalization
             // Set Culture and UICulture from route culture parameter
             return Task.FromResult(new ProviderCultureResult(culture, culture));
         }
-    }}
+    }
+}

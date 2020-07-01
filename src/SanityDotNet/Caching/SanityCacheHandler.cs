@@ -16,7 +16,8 @@ namespace SanityDotNet.Caching
             _cache = cache;
         }
 
-        public async Task<T> GetCachedOrLoad<T>(Guid documentId, CultureInfo language, Func<Task<T>> loadAction) where T : ISanityDocument
+        public async Task<T> GetCachedOrLoad<T>(Guid documentId, CultureInfo language, Func<Task<T>> loadAction)
+            where T : ISanityDocument
         {
             var cacheKey = CreateCacheKey(documentId);
 
@@ -34,7 +35,8 @@ namespace SanityDotNet.Caching
             return item;
         }
 
-        public async Task<T> GetCachedOrLoad<T>(string slug, CultureInfo language, Func<Task<T>> loadAction) where T : ISanityDocument
+        public async Task<T> GetCachedOrLoad<T>(string slug, CultureInfo language, Func<Task<T>> loadAction)
+            where T : ISanityDocument
         {
             var slugDocumentIdCacheKey = CreateSlugMappingCacheKey(slug, language);
 

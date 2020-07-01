@@ -1,6 +1,6 @@
 using System;
 using System.Linq.Expressions;
-using SanityDotNet.Conventions;
+using SanityDotNet.Expressions;
 
 namespace SanityDotNet.Reflection
 {

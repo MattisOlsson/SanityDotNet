@@ -18,7 +18,10 @@ namespace SanityDotNet.Web
         private readonly IHttpContextAccessor _httpContextAccessor;
         private readonly SanityOptions _options;
 
-        public UrlResolver(ISanityClient client, IOptions<SanityOptions> options, IHttpContextAccessor httpContextAccessor) : base(client)
+        public UrlResolver(
+            ISanityClient client,
+            IOptions<SanityOptions> options,
+            IHttpContextAccessor httpContextAccessor) : base(client)
         {
             _httpContextAccessor = httpContextAccessor;
             _options = options.Value;

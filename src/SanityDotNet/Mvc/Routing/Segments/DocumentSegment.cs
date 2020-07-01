@@ -69,7 +69,10 @@ namespace SanityDotNet.Mvc.Routing.Segments
             }
         }
 
-        public virtual async Task<string> GetVirtualPathSegment(HttpRequest request, RouteValueDictionary routeValues, HashSet<string> usedValues)
+        public virtual async Task<string> GetVirtualPathSegment(
+            HttpRequest request,
+            RouteValueDictionary routeValues,
+            HashSet<string> usedValues)
         {
             usedValues.Add(Name);
 
@@ -90,7 +93,10 @@ namespace SanityDotNet.Mvc.Routing.Segments
             return null;
         }
 
-        protected virtual async Task<bool> AppendVirtualPath(StringBuilder virtualPathBuilder, Guid documentId, CultureInfo language)
+        protected virtual async Task<bool> AppendVirtualPath(
+            StringBuilder virtualPathBuilder,
+            Guid documentId,
+            CultureInfo language)
         {
             var document = await _sanityClient.Get<ISanityDocument>(documentId, language);
 

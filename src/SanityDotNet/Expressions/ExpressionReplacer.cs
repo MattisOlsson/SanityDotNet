@@ -1,7 +1,7 @@
 using System;
 using System.Linq.Expressions;
 
-namespace SanityDotNet
+namespace SanityDotNet.Expressions
 {
     public class ExpressionReplacer<TExpression> : ExpressionVisitor where TExpression : Expression
     {

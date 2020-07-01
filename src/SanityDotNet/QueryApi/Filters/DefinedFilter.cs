@@ -17,6 +17,5 @@ namespace SanityDotNet.QueryApi.Filters
                 ? $"defined({Field})"
                 : $"!defined({Field})";
         }
-
     }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Globalization;
 
-namespace SanityDotNet
+namespace SanityDotNet.Expressions
 {
     public abstract class FieldFilterValue
     {

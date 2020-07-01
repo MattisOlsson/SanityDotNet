@@ -25,7 +25,10 @@ namespace SanityDotNet.Mvc.Routing.Segments
             return Task.FromResult(true);
         }
 
-        public Task<string> GetVirtualPathSegment(HttpRequest request, RouteValueDictionary routeValues, HashSet<string> usedValues)
+        public Task<string> GetVirtualPathSegment(
+            HttpRequest request,
+            RouteValueDictionary routeValues,
+            HashSet<string> usedValues)
         {
             return Task.FromResult(string.Empty);
         }

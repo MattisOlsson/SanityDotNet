@@ -9,7 +9,9 @@ namespace SanityDotNet.Reflection
         {
             if ((object) (member as PropertyInfo) != null)
                 return ((PropertyInfo) member).PropertyType;
-            return (object) (member as MethodInfo) != null ? ((MethodInfo) member).ReturnType : ((FieldInfo) member).FieldType;
+            return (object) (member as MethodInfo) != null
+                ? ((MethodInfo) member).ReturnType
+                : ((FieldInfo) member).FieldType;
         }
     }
 }

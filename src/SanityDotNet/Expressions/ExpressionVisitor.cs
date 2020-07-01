@@ -4,7 +4,7 @@ using System.Collections.ObjectModel;
 using System.Linq.Expressions;
 using SanityDotNet.Reflection;
 
-namespace SanityDotNet
+namespace SanityDotNet.Expressions
 {
     public abstract class ExpressionVisitor
     {

@@ -8,7 +8,7 @@ namespace SanityDotNet.Mvc.Routing
         {
             if (dictionary.TryGetValue(key, out var objValue))
             {
-                value = (T)objValue;
+                value = (T) objValue;
                 return true;
             }
 

@@ -4,11 +4,9 @@ using System.Linq.Expressions;
 using System.Reflection;
 using System.Text;
 using Newtonsoft.Json;
-using Newtonsoft.Json.Serialization;
-using Refit;
 using SanityDotNet.Extensions;
 
-namespace SanityDotNet.Conventions
+namespace SanityDotNet.Expressions
 {
     public class FieldPathVisitor : ExpressionVisitor
     {
@@ -79,6 +77,7 @@ namespace SanityDotNet.Conventions
                     expressionList.Add(expression);
                 }
             }
+
             return expressionList != null ? expressionList.AsReadOnly() : original;
         }
 

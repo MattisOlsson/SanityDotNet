@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace SanityDotNet
+namespace SanityDotNet.Expressions
 {
     public class ExpressionFinder<TExpression> : ExpressionVisitor where TExpression : Expression
     {

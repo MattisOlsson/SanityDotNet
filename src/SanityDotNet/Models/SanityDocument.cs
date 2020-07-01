@@ -11,9 +11,7 @@ namespace SanityDotNet.Models
 {
     public abstract class SanityDocument : ISanityDocument
     {
-        [AliasAs("_id")]
-        [JsonProperty("_id")]
-        public Guid Id { get; set; }
+        [AliasAs("_id")] [JsonProperty("_id")] public Guid Id { get; set; }
 
         [AliasAs("_rev")]
         [JsonProperty("_rev")]

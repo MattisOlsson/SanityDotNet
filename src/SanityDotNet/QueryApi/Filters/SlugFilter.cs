@@ -1,4 +1,5 @@
 using System.Globalization;
+using SanityDotNet.Expressions;
 
 namespace SanityDotNet.QueryApi.Filters
 {
@@ -10,7 +11,8 @@ namespace SanityDotNet.QueryApi.Filters
 
         public override string ToString()
         {
-            return $"{Field}.{CultureInfo.CurrentUICulture.TwoLetterISOLanguageName}.current{GetComparisonOperator()}{Value.ToQueryFormat()}";
+            return
+                $"{Field}.{CultureInfo.CurrentUICulture.TwoLetterISOLanguageName}.current{GetComparisonOperator()}{Value.ToQueryFormat()}";
         }
     }
 }

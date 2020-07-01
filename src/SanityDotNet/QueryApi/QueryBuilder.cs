@@ -6,7 +6,6 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Web;
 using SanityDotNet.Client;
-using SanityDotNet.Conventions;
 using SanityDotNet.Models;
 using SanityDotNet.QueryApi.Filters;
 using SanityDotNet.QueryApi.Projections;

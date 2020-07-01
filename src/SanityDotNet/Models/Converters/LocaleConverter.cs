@@ -27,7 +27,7 @@ namespace SanityDotNet.Models.Converters
             }
 
             var token = JToken.Load(reader);
-            var locale = new TSource { Type = token.First.ToString()};
+            var locale = new TSource {Type = token.First.ToString()};
             token.First.Remove();
 
             serializer.Populate(token.CreateReader(), locale);
