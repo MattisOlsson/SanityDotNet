@@ -3,14 +3,14 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SanityDotNet.Client;
-using SanityDotNet.Extensions;
 using SanityDotNet.QueryApi.Extensions;
 using SanityDotNet.QueryApi.Filters;
 using SanityDotNet.QueryApi.Sorting;
-using SanityDotNet.Web.Test.Models;
-using SanityDotNet.Web.Test.Models.ViewModels;
+using SanityDotNet.SampleWeb.Models;
+using SanityDotNet.SampleWeb.Models.ViewModels;
+using SanityDotNet.Web;
 
-namespace SanityDotNet.Web.Test.Controllers
+namespace SanityDotNet.SampleWeb.Controllers
 {
     public class StartPageController : Controller
     {
@@ -25,8 +25,7 @@ namespace SanityDotNet.Web.Test.Controllers
 
         public async Task<IActionResult> Index(int page = 1)
         {
-            var response = await _sanityClient.Query<Product>(CultureInfo.GetCultureInfo("no"))
-                .Filter(p => p.Title.IsDefined())
+            var response = await _sanityClient.Query<Category>()
                 .OrderBy(
                     p => p.UpdatedAt.Descending(),
                     p => p.CreatedAt.Descending(),
@@ -34,7 +33,7 @@ namespace SanityDotNet.Web.Test.Controllers
                 )
                 .GetQueryResponse();
 
-            var tasks = response.Result.Select(CreateProductViewModel);
+            var tasks = response.Result.Select(CreateCategoryViewModel);
             var viewModels = await Task.WhenAll(tasks);
             return View(viewModels);
         }
@@ -44,7 +43,16 @@ namespace SanityDotNet.Web.Test.Controllers
             return new ProductViewModel
             {
                 Product = product,
-                Url = await _urlResolver.GetUrl(product)
+                Url = await _urlResolver.GetUrl(product),
+            };
+        }
+
+        private async Task<CategoryViewModel> CreateCategoryViewModel(Category category)
+        {
+            return new CategoryViewModel
+            {
+                Category = category,
+                Url = await _urlResolver.GetUrl(category),
             };
         }
     }

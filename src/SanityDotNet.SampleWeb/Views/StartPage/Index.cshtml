@@ -1,4 +1,4 @@
-@model IEnumerable<SanityDotNet.Web.Test.Models.ViewModels.ProductViewModel>
+@model IEnumerable<SanityDotNet.SampleWeb.Models.ViewModels.CategoryViewModel>
 
 @{
   Layout = null;
@@ -16,10 +16,7 @@
       @foreach (var doc in Model)
       {
         <li>
-          <h2>@doc.Product.Title</h2>
-          <p>@doc.Product.Id</p>
-          <p>@doc.Product.Blurb</p>
-          <time>@doc.Product.UpdatedAt</time>
+          <h2>@(doc.Category.DisplayName ?? doc.Category.Title)</h2>
           <p>
             <a href="@doc.Url">@doc.Url</a>
           </p>

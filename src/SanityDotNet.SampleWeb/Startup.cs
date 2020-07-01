@@ -6,8 +6,9 @@ using Microsoft.Extensions.Hosting;
 using SanityDotNet.Client;
 using SanityDotNet.Mvc;
 using SanityDotNet.Mvc.Routing.Segments;
+using SanityDotNet.Web;
 
-namespace SanityDotNet.Web.Test
+namespace SanityDotNet.SampleWeb
 {
     public class Startup
     {

@@ -1,10 +1,11 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SanityDotNet.Mvc;
-using SanityDotNet.Web.Test.Models;
-using SanityDotNet.Web.Test.Models.ViewModels;
+using SanityDotNet.SampleWeb.Models;
+using SanityDotNet.SampleWeb.Models.ViewModels;
+using SanityDotNet.Web;
 
-namespace SanityDotNet.Web.Test.Controllers
+namespace SanityDotNet.SampleWeb.Controllers
 {
     public class ProductController : ContentController<Product>
     {

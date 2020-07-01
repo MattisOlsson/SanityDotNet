@@ -2,15 +2,13 @@ using System.Globalization;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SanityDotNet.Client;
-using SanityDotNet.Extensions;
 using SanityDotNet.Mvc;
 using SanityDotNet.QueryApi.Extensions;
 using SanityDotNet.QueryApi.Filters;
-using SanityDotNet.Web.Test.Models;
-using SanityDotNet.Web.Test.Models.ViewModels;
+using SanityDotNet.SampleWeb.Models;
+using SanityDotNet.SampleWeb.Models.ViewModels;
 
-
-namespace SanityDotNet.Web.Test.Controllers
+namespace SanityDotNet.SampleWeb.Controllers
 {
     public class CategoryController : ContentController<Category>
     {

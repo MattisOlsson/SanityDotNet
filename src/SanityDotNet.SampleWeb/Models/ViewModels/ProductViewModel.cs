@@ -1,4 +1,4 @@
-namespace SanityDotNet.Web.Test.Models.ViewModels
+namespace SanityDotNet.SampleWeb.Models.ViewModels
 {
     public class ProductViewModel
     {

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 
-namespace SanityDotNet.Web.Test
+namespace SanityDotNet.SampleWeb
 {
     public class Program
     {

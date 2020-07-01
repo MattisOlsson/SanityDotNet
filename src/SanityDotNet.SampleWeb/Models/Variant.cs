@@ -1,7 +1,7 @@
 using SanityDotNet.DataAnnotations;
 using SanityDotNet.Models;
 
-namespace SanityDotNet.Web.Test.Models
+namespace SanityDotNet.SampleWeb.Models
 {
     [SanityContentType("productVariant")]
     public class Variant : SanityDocument

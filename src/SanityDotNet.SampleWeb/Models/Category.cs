@@ -2,7 +2,7 @@ using SanityDotNet.DataAnnotations;
 using SanityDotNet.Models;
 using SanityDotNet.Models.FieldTypes;
 
-namespace SanityDotNet.Web.Test.Models
+namespace SanityDotNet.SampleWeb.Models
 {
     [SanityContentType("category")]
     public class Category : SanityDocument
